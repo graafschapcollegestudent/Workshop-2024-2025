@@ -3,74 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            font-family: Arial, Verdana, Geneva, Tahoma, sans-serif
-        }
-        nav{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            height: 100px;
-        }
-        header{
-            width: 100%;
-            height: 500px;
-            display: flex;
-        }
-        .logo img {
-            width: 100px;
-            height: 100%;
-            /* border: 5px solid black; */
-        }
-        .hyperlinks{
-            width: 40%;
-            height: 100%;
-            margin: 0 10px;
-        }
-        .hyperlinks ul{
-            height: 100%;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        li a {
-            text-decoration: none;
-            color: black;
-        }
-        li a:hover{
-            color: red;
-        }
-        .meestPopulair{
-            padding: 10px;
-            width: 48%;
-            height: 49%;
-            margin: 10px;
-        }
-        .imgPopulair{
-            margin: 10px;
-            width: 48%;
-            height: 49%;
-            background-image: url(img/LoempiaFoto.jpg);
-            background-size: cover;
-        }
-        .meestPopulair h1, p, button{
-            padding: 10px;
-        }
-        button{
-            background-color: black;
-            color: white;
-            border-radius: 20%;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
-    </style>
+    <meta name="description" content="">
+    <title>Foodtruck</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <nav>
@@ -94,5 +29,64 @@
             
         </div>
     </header>
+        <div class="titelVoorGerechten">
+            <h2>Voorbeelden van gerechten</h2>
+        </div>
+    <main>
+        <div class="cards">
+            <div class="cardFoto">
+                <img src="img/LoempiaFoto.jpg" alt="Hier komen fotos van een paar gerechten">
+            </div>
+            <div class="naamGerecht">
+                <h2>Naam gerecht</h2>
+            </div>
+            <div class="infoGerecht">
+                <p>Informatie over gerecht Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat illum sed cum ab, rerum dolorum delectus in iste voluptate fuga amet, veritatis quibusdam asperiores pariatur.</p>
+            </div>
+            <div class="allergenenGerecht">
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+            </div>
+            <div class="divMetButtonEnLabel">
+                <button>Bestel</button>
+                <label for="prijs">00,00</label>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="cardFoto">
+                <img src="img/LoempiaFoto.jpg" alt="Hier komen fotos van een paar gerechten">
+            </div>
+            <div class="naamGerecht">
+                <h2>Naam gerecht</h2>
+            </div>
+            <div class="infoGerecht">
+                <p>Informatie over gerecht Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim aperiam neque quis impedit, laboriosam qui atque! Sit illo nobis temporibus voluptas. Amet, repudiandae explicabo.</p>
+            </div>
+            <div class="allergenenGerecht">
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+            </div>
+            <div class="divMetButtonEnLabel">
+                <button>Bestel</button>
+                <label for="prijs">00,00</label>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="cardFoto">
+                <img src="img/LoempiaFoto.jpg" alt="Hier komen fotos van een paar gerechten">
+            </div>
+            <div class="naamGerecht">
+                <h2>Naam gerecht</h2>
+            </div>
+            <div class="infoGerecht">
+                <p>Informatie over gerecht Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque consequuntur beatae? Possimus quam, amet iste animi dolores molestiae asperiores tenetur ipsa enim corporis?</p>
+            </div>
+            <div class="allergenenGerecht">
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+            </div>
+            <div class="divMetButtonEnLabel">
+                <button>Bestel</button>
+                <label for="prijs">00,00</label>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
