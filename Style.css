@@ -30,6 +30,9 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+.container{
+    max-width: 1200px;
+}
 .logoFoto{
     width: 100px;
     height: 100px;
@@ -109,4 +112,12 @@ footer h4{
 }
 .linksFooter{
     display: flex;
+}
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
 }
