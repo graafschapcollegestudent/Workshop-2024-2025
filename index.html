@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Foodtruck</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('')
+        })
+    </script>
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-            <img src="img/Logo Foodtruck.webp" alt="Logo foodtruck" class="logoFoto">
-        </div>
-        <div class="hyperlinks">
-            <ul>
-                <li><a href="#">Gerechten</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Winkelwagen</a></li>
-            </ul>
-        </div>
-    </nav>
     <header>
-        <div class="meestPopulair">
-            <h1>Huidige populairste gerecht!</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil dolore ipsam quia odio quo natus itaque vero molestiae voluptates totam earum sit, alias in omnis qui, beatae recusandae repudiandae eligendi, nesciunt architecto provident dolorem? Temporibus natus culpa assumenda perferendis inventore, nulla ad est exercitationem, recusandae molestias ab incidunt. Illo!</p>
-            <button>Betaal</button>
+        <div class="container">
+            <nav>
+                <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck">
+                <ul>
+                    <li><a href="#">Gerechten</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Winkelwagen</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="imgPopulair">
-            
+
+        <div class="container">
+            <div class="meestPopulair">
+                <div class="info">
+                    <h1>Huidige populairste gerecht!</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil dolore ipsam quia
+                        odio quo natus itaque vero molestiae voluptates totam earum sit, alias in omnis qui, beatae
+                        recusandae repudiandae eligendi, nesciunt architecto provident dolorem? Temporibus natus culpa
+                        assumenda perferendis inventore, nulla ad est exercitationem, recusandae molestias ab incidunt.
+                        Illo!</p>
+                    <button><a href="Winkelwagen.html">Bestel</a></button>
+                </div>
+                <img src="img/LoempiaFoto.jpg" alt="Foto meest populair">
+            </div>
         </div>
     </header>
-        <div class="titelVoorGerechten">
-            <h2>Voorbeelden van gerechten</h2>
-        </div>
+ 
+    <div class="titelVoorGerechten">
+        <h2>Voorbeelden van gerechten</h2>
+    </div>
     <main>
         <div class="cards">
             <div class="cardFoto">
@@ -43,13 +57,17 @@
                 <h2>Naam gerecht</h2>
             </div>
             <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat illum sed cum ab, rerum dolorum delectus in iste voluptate fuga amet, veritatis quibusdam asperiores pariatur.</p>
+                <p>Informatie over gerecht Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat illum sed
+                    cum ab, rerum dolorum delectus in iste voluptate fuga amet, veritatis quibusdam asperiores pariatur.
+                </p>
             </div>
             <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
+                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
+                    consectetur, odit molestias!</p>
             </div>
             <div class="divMetButtonEnLabel">
-                <button>Bestel</button>
+                <button><a href="Winkelwagen.html">Bestel</a></button>
                 <label for="prijs">00,00</label>
             </div>
         </div>
@@ -61,13 +79,17 @@
                 <h2>Naam gerecht</h2>
             </div>
             <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim aperiam neque quis impedit, laboriosam qui atque! Sit illo nobis temporibus voluptas. Amet, repudiandae explicabo.</p>
+                <p>Informatie over gerecht Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim aperiam
+                    neque quis impedit, laboriosam qui atque! Sit illo nobis temporibus voluptas. Amet, repudiandae
+                    explicabo.</p>
             </div>
             <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
+                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
+                    consectetur, odit molestias!</p>
             </div>
             <div class="divMetButtonEnLabel">
-                <button>Bestel</button>
+                <button><a href="Winkelwagen.html">Bestel</a></button>
                 <label for="prijs">00,00</label>
             </div>
         </div>
@@ -79,13 +101,17 @@
                 <h2>Naam gerecht</h2>
             </div>
             <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque consequuntur beatae? Possimus quam, amet iste animi dolores molestiae asperiores tenetur ipsa enim corporis?</p>
+                <p>Informatie over gerecht Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque
+                    consequuntur beatae? Possimus quam, amet iste animi dolores molestiae asperiores tenetur ipsa enim
+                    corporis?</p>
             </div>
             <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis consectetur, odit molestias!</p>
+                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
+                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
+                    consectetur, odit molestias!</p>
             </div>
             <div class="divMetButtonEnLabel">
-                <button>Bestel</button>
+                <button><a href="Winkelwagen.html">Bestel</a></button>
                 <label for="prijs">00,00</label>
             </div>
         </div>
@@ -117,4 +143,5 @@
         </div>
     </footer>
 </body>
+
 </html>
