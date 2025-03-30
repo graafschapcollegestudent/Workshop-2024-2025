@@ -1,34 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-    updateWinkelwagenAantal();
+document.addEventListener('DOMContentLoaded', function () {
+    // Voeg event listeners toe aan de bestelknoppen
+    document.querySelectorAll('.bestel-knop').forEach(knop => {
+        knop.addEventListener('click', function (event) {
+            event.preventDefault();  // Voorkomt dat de pagina herlaadt
+            let productId = this.getAttribute('data-product-id');
+            let productNaam = this.getAttribute('data-product-naam');
+            let productPrijs = parseFloat(this.getAttribute('data-product-prijs'));
 
-    function updateWinkelwagenAantal() {
-        let winkelmandje = JSON.parse(localStorage.getItem("winkelmandje")) || [];
-        let totaalAantal = winkelmandje.reduce((sum, item) => sum + item.aantal, 0);
-
-        document.getElementById("winkelwagenAantal").innerText = totaalAantal;
-    }
-
-    document.querySelectorAll(".gerechten a").forEach(knop => {
-        knop.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const gerechtElement = knop.closest(".gerechten");
-            const gerechtNaam = gerechtElement.querySelector("h2").innerText;
-            const aantal = parseInt(gerechtElement.querySelector("input[type='number']").value);
-            const afbeelding = gerechtElement.querySelector("img").src;
-
-            let winkelmandje = JSON.parse(localStorage.getItem("winkelmandje")) || [];
-            let bestaandGerecht = winkelmandje.find(item => item.naam === gerechtNaam);
-
-            if (bestaandGerecht) {
-                bestaandGerecht.aantal += aantal;
-            } else {
-                winkelmandje.push({ naam: gerechtNaam, aantal: aantal, afbeelding: afbeelding });
-            }
-
-            localStorage.setItem("winkelmandje", JSON.stringify(winkelmandje));
-            updateWinkelwagenAantal();
-            alert(`${gerechtNaam} (${aantal}x) toegevoegd aan winkelmandje!`);
+            voegToeAanWinkelwagen(productId, productNaam, productPrijs);
         });
     });
 });
+
+// Functie om een product toe te voegen aan de winkelwagen
+function voegToeAanWinkelwagen(productId, productNaam, productPrijs) {
+    let winkelwagen = JSON.parse(localStorage.getItem('winkelwagen')) || [];
+
+    let bestaandProduct = winkelwagen.find(item => item.id === productId);
+
+    if (bestaandProduct) {
+        bestaandProduct.aantal += 1;
+    } else {
+        winkelwagen.push({ id: productId, naam: productNaam, prijs: productPrijs, aantal: 1 });
+    }
+
+    localStorage.setItem('winkelwagen', JSON.stringify(winkelwagen));
+    alert(`${productNaam} toegevoegd aan de winkelwagen!`);
+}
