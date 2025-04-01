@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <div class="container">
             <nav>
                 <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck">
-                <div class="hamburger">&#9776;</div> 
+                <div class="hamburger">&#9776;</div>
                 <ul class="menu">
                     <li><a href="#">Gerechten</a></li>
                     <li><a href="#">Contact</a></li>
@@ -23,7 +23,7 @@
         </div>
     </header>
     <main>
-        <form action="vestelling.php"></form>
+        <!-- Gerechten -->
         <div class="gerechten">
             <img src="img/loempia.webp" alt="Filipijnse loempia's">
             <h2>Lumpia (Filipijnse Loempia's)</h2>
@@ -39,7 +39,10 @@
             <strong>Allergieën:</strong> Gluten, Eieren
             <br>
             <hr>
-            <a href="">Bestel</a>
+            <a href="#" class="bestel-knop" 
+               data-product-id="1" 
+               data-product-naam="Lumpia (Filipijnse Loempia's)" 
+               data-product-prijs="5.99">Bestel</a>
             <br>
             Aantal<input type="number" value="1" min="1" max="10">
         </div>
@@ -58,7 +61,10 @@
             <strong>Allergieën:</strong> Gluten, Melk/Lactose
             <br>
             <hr>
-            <a href="">Bestel</a>
+            <a href="#" class="bestel-knop" 
+               data-product-id="2" 
+               data-product-naam="Shoarma Schotel" 
+               data-product-prijs="8.99">Bestel</a>
             <br>
             Aantal<input type="number" value="1" min="1" max="10">
         </div>
@@ -77,12 +83,15 @@
             <strong>Allergieën:</strong> Geen veelvoorkomende allergenen
             <br>
             <hr>
-            <a href="">Bestel</a>
+            <a href="#" class="bestel-knop" 
+               data-product-id="3" 
+               data-product-naam="Somalische Bariis met Vlees" 
+               data-product-prijs="10.99">Bestel</a>
             <br>
             Aantal<input type="number" value="1" min="1" max="10">
         </div>
         <div class="gerechten">
-            <img src="img//salade.webp" alt="Mediterrane Salade">
+            <img src="img/salade.webp" alt="Mediterrane Salade">
             <h2>Frisse Mediterrane Salade</h2>
             <p>Een lichte en gezonde salade met knapperige groenten, feta kaas en olijven, besprenkeld met een frisse vinaigrette.</p>
             <strong>Ingrediënten:</strong>
@@ -99,9 +108,11 @@
             <strong>Allergieën:</strong> Melk/Lactose, Mosterd
             <br>
             <hr>
-            <a href="">Bestel</a>
+            <a href="#" class="bestel-knop" 
+               data-product-id="4" 
+               data-product-naam="Frisse Mediterrane Salade" 
+               data-product-prijs="7.49">Bestel</a>
             <br>
-            <input type="checkbox" name="gerecht[]" id="">
             Aantal<input type="number" value="1" min="1" max="10">
         </div>
     </main>
