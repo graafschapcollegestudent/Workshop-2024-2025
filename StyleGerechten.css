@@ -166,6 +166,26 @@ nav ul li a:hover {
 #bestellen:hover {
     background-color: #218838;
 }
+.grote-bestelknop {
+    display: block;
+    width: 100%;
+    background-color: #ff8000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.grote-bestelknop:hover {
+    background-color: #cc6600;
+}
+
 
 /* Responsief maken */
 @media (min-width: 768px) {
