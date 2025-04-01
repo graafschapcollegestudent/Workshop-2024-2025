@@ -1,49 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body{
-    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+     margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+header {
+    background-color: #ff9800;
+    padding: 15px 0;
+    text-align: center;
 }
 nav{
-    /* display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px; */
+   align-items: center;
+   padding: 0 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 nav img{
-    width: 100px;
     height: 100px;
 }
 nav ul{
     display: flex;
     list-style: none;
+    padding: 0;
 }
 nav ul li{
-    margin: auto 10px;
+    margin: 0 15px;
 }
-li a{
+nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
 }
 li a:hover{
     color: red;
 }
-header{
-    width: 100%;
-}
 main{
-    width: 100%;
+   justify-content: center;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px;
 }
 .gerechten{
-    border: solid 2px black;
-    height: 300px;
-    width: 30%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+.gerechten img{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Verberg het menu standaard */
+        flex-direction: column; /* Zorg ervoor dat items onder elkaar staan */
+        background-color: #ff9800; /* Optioneel: achtergrondkleur voor mobiel menu */
+        position: absolute; /* Zorg ervoor dat het menu bovenop andere elementen staat */
+        top: 60px; /* Pas aan afhankelijk van je headerhoogte */
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: block; /* Alleen zichtbaar op mobiel */
+    }
+    .menu.active {
+        display: flex; /* Toon het menu wanneer actief */
+    }
+
+    .menu li {
+        display: block;
+        padding: 10px 0;
+    }
 }
