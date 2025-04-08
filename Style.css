@@ -28,16 +28,16 @@ nav ul li{
 }
 li a{
     text-decoration: none;
-    color: #F9F6EE;
-    text-shadow: 1px 1px black;
+    /* color: #F9F6EE;
+    text-shadow: 1px 1px black; */
 }
 li a:hover{
-    color: red;
+    color: orange;
 }
 header{
     width: 100%;
     height: 550px;
-    background-image: url(img/fotoVanFoodtruckBackgroundHeader.webp);
+    /* background-image: url(img/fotoVanFoodtruckBackgroundHeader.webp); */
     background-size: cover;
     background-position:bottom; 
 }
@@ -54,6 +54,8 @@ footer{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: black;
+    color: white;
     li{
         padding: 5px;
         list-style: none;
@@ -63,8 +65,8 @@ footer{
     }
 }
 .info{
-    color: #F9F6EE;
-    text-shadow: 1px 1px black;
+    /* color: #F9F6EE;
+    text-shadow: 1px 1px black; */
 }
 .flex-container{
     display: flex;
