@@ -12,20 +12,52 @@
         <div class="container">
             <nav>
                 <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck">
-                <ul class="menu">
-                    <li><a href="gerechten.html">Gerechten</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="winkelwagen.html">Winkelwagen</a></li>
+                <ul>
+                    <li><a href="Gerechten.html">Gerechten</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Winkelwagen</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <h1>Winkelwagen</h1>
-        <div id="winkelwagen-inhoud"></div>
-        <div id="totaal-prijs"></div>
-        <button id="bestellen" onclick="afrekenen()">Afrekenen</button>
+        <div class="container">
+            <div class="flex-container">
+                <h1>Winkelwagen</h1>
+                <div id="winkelwagen-inhoud"></div>
+                <div id="totaal-prijs"></div>
+                <div class="bestelKnop">
+                    <button id="bestellen" onclick="afrekenen()">Afrekenen</button>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="linksFooter">
+            <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck" class="logoFoto">
+            <div>
+                <h4>Addres: </h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="rechtsFooter">
+            <h4>Openingstijden:</h4>
+            <ul>
+                <li>Maandag t/m Vrijdag: </li>
+                <li>09:00 - 17:00</li>
+                <li>Zaterdag t/m Zondag: </li>
+                <li>07:00 - 19:00</li>
+            </ul>
+        </div>
+        <div class="rechtsFooter">
+            <h4>Contact</h4>
+            <ul>
+                <li>0612345678</li>
+                <li>email@email.com</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
