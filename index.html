@@ -4,144 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Foodtruck</title>
+    <meta name="description" content="Foodtruck website - Home">
+    <title>Home - Foodtruck</title>
     <link rel="stylesheet" href="Style.css">
-    <script src="jquery-3.7.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('')
-        })
-    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck">
-                <ul>
-                    <li><a href="#">Gerechten</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Winkelwagen</a></li>
+                <div class="hamburger">&#9776;</div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Gerechten.html">Gerechten</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Winkelwagen.html">Winkelwagen</a></li>
                 </ul>
             </nav>
         </div>
-
-        <div class="container">
-            <div class="meestPopulair">
-                <div class="info">
-                    <h1>Huidige populairste gerecht!</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil dolore ipsam quia
-                        odio quo natus itaque vero molestiae voluptates totam earum sit, alias in omnis qui, beatae
-                        recusandae repudiandae eligendi, nesciunt architecto provident dolorem? Temporibus natus culpa
-                        assumenda perferendis inventore, nulla ad est exercitationem, recusandae molestias ab incidunt.
-                        Illo!</p>
-                    <button><a href="Gerechten.html">Bestel</a></button>
-                </div>
-                <img src="img/Gerecht 1.png" alt="Foto meest populair">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Welkom bij onze Foodtruck!</h1>
+                <p>De lekkerste gerechten, altijd vers bereid. Bestel nu je favoriete maaltijd!</p>
+                <a href="Gerechten.html" class="bestel-btn">Bekijk Gerechten</a>
             </div>
         </div>
     </header>
- 
-    <div class="titelVoorGerechten">
-        <h2>Voorbeelden van gerechten</h2>
-    </div>
+
     <main>
-        <div class="cards">
-            <div class="cardFoto">
-                <img src="img/Gerecht 1.png" alt="Hier komen fotos van een paar gerechten">
+        <section class="over-ons">
+            <div class="container">
+                <h2>Over Ons</h2>
+                <p>Wij zijn een foodtruck die de lekkerste gerechten serveert met een focus op versheid en kwaliteit. Van
+                    smaakvolle snacks tot een complete maaltijd, bij ons zit je goed! Elke dag bereiden wij gerechten
+                    met liefde en passie.</p>
             </div>
-            <div class="naamGerecht">
-                <h2>Naam gerecht</h2>
+        </section>
+
+        <section class="populaire-gerechten">
+            <div class="container">
+                <h2>Onze Populaire Gerechten</h2>
+                <div class="gerechten-overzicht">
+                    <div class="card">
+                        <img src="img/Gerecht 1.png" alt="Populair gerecht 1">
+                        <h3>Gerecht 1</h3>
+                        <p>Heerlijk gerecht, gemaakt met de beste ingrediënten.</p>
+                        <a href="Gerechten.html" class="bestel-btn">Bestel nu</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/Gerecht2.png" alt="Populair gerecht 2">
+                        <h3>Gerecht 2</h3>
+                        <p>Een favoriete keuze van onze klanten!</p>
+                        <a href="Gerechten.html" class="bestel-btn">Bestel nu</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/Gerecht 3.png" alt="Populair gerecht 3">
+                        <h3>Gerecht 3</h3>
+                        <p>Probeer dit gerecht en ontdek waarom het zo populair is.</p>
+                        <a href="Gerechten.html" class="bestel-btn">Bestel nu</a>
+                    </div>
+                </div>
             </div>
-            <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat illum sed
-                    cum ab, rerum dolorum delectus in iste voluptate fuga amet, veritatis quibusdam asperiores pariatur.
-                </p>
+        </section>
+
+        <section class="contact-informatie">
+            <div class="container">
+                <h2>Neem Contact Op</h2>
+                <p>Heb je vragen? Aarzel niet om contact met ons op te nemen!</p>
+                <a href="Contact.html" class="bestel-btn">Contacteer Ons</a>
             </div>
-            <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
-                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
-                    consectetur, odit molestias!</p>
-            </div>
-            <div class="divMetButtonEnLabel">
-                <button><a href="Gerechten.html">Bestel</a></button>
-                <label for="prijs">00,00</label>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="cardFoto">
-                <img src="img/Gerecht2.png" alt="Hier komen fotos van een paar gerechten">
-            </div>
-            <div class="naamGerecht">
-                <h2>Naam gerecht</h2>
-            </div>
-            <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim aperiam
-                    neque quis impedit, laboriosam qui atque! Sit illo nobis temporibus voluptas. Amet, repudiandae
-                    explicabo.</p>
-            </div>
-            <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
-                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
-                    consectetur, odit molestias!</p>
-            </div>
-            <div class="divMetButtonEnLabel">
-                <button><a href="Gerechten.html">Bestel</a></button>
-                <label for="prijs">00,00</label>
-            </div>
-        </div>
-        <div class="cards">
-            <div class="cardFoto">
-                <img src="img/Gerecht 3.png" alt="Hier komen fotos van een paar gerechten">
-            </div>
-            <div class="naamGerecht">
-                <h2>Naam gerecht</h2>
-            </div>
-            <div class="infoGerecht">
-                <p>Informatie over gerecht Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem officiis cumque
-                    consequuntur beatae? Possimus quam, amet iste animi dolores molestiae asperiores tenetur ipsa enim
-                    corporis?</p>
-            </div>
-            <div class="allergenenGerecht">
-                <p>Allergenen en meer Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, aut quas
-                    reiciendis blanditiis, quasi facilis tenetur molestiae ab mollitia laudantium minima veritatis
-                    consectetur, odit molestias!</p>
-            </div>
-            <div class="divMetButtonEnLabel">
-                <button><a href="Gerechten.html">Bestel</a></button>
-                <label for="prijs">00,00</label>
-            </div>
-        </div>
+        </section>
     </main>
+
     <footer>
-        <div class="linksFooter">
-            <img src="img/Logo Foodtruck.webp" alt="Logo van foodtruck" class="logoFoto">
-            <div>
-                <h4>Addres: </h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <img src="img/Logo Foodtruck.webp" alt="Logo" class="footer-logo">
+                <p>Adres: Lorem ipsum dolor sit amet, 1234 AB, Stad</p>
+                <p>Contact: info@foodtruck.com</p>
             </div>
-        </div>
-        <div class="rechtsFooter">
-            <h4>Openingstijden:</h4>
-            <ul>
-                <li>Maandag t/m Vrijdag: </li>
-                <li>09:00 - 17:00</li>
-                <li>Zaterdag t/m Zondag: </li>
-                <li>07:00 - 19:00</li>
-            </ul>
-        </div>
-        <div class="rechtsFooter">
-            <h4>Contact</h4>
-            <ul>
-                <li>0612345678</li>
-                <li>email@email.com</li>
-            </ul>
+            <div class="footer-hours">
+                <h4>Openingstijden:</h4>
+                <ul>
+                    <li>Ma-Vr: 09:00 - 17:00</li>
+                    <li>Za-Zo: 07:00 - 19:00</li>
+                </ul>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

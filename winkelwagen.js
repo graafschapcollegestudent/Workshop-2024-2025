@@ -46,5 +46,5 @@ function verwijderUitWinkelwagen(index) {
 // Functie om door te gaan naar afrekenen
 function afrekenen() {
     alert('Je wordt doorgestuurd naar de betaalpagina...');
-    window.location.href = 'afrekenen.html'; // Dit zou naar de afrekenpagina gaan
+    window.location.href = 'bedankt.html'; // Dit zou naar de afrekenpagina gaan
 }
